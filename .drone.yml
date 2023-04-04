@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: default
+
+
+steps:
+- name: hello
+  image: busybox
+  commands:
+  - echo hello world
+ 
+trigger:
+  branch:
+  - master
